@@ -66,7 +66,7 @@ export default function ChatPage() {
   const [aiTyping, setAiTyping] = useState(false);
   
   // App Config states
-  const [ollamaModel, setOllamaModel] = useState("llama3.2:3b");
+  const [ollamaModel, setOllamaModel] = useState("dolphin-phi");
   const [aiTrigger, setAiTrigger] = useState<"mention" | "always">("mention");
 
   // Socket.IO dynamic connection states

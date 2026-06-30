@@ -150,7 +150,7 @@ async def handle_message(sid, data):
     })
     
     if trigger_ai:
-        model_name = data.get("model", "llama3.2:3b")
+        model_name = data.get("model", "dolphin-phi")
         system_prompt = data.get("systemPrompt", "You are a helpful AI assistant.")
         await stream_ollama_response(prompt_content, model_name, system_prompt)
 
